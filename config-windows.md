@@ -196,12 +196,18 @@ The following parameters can be specified:
     This would be specified if using a base image which does not contain a utility VM image.
     If not supplied, the runtime will search the container filesystem layers from the bottom-most layer upwards, until it locates "UtilityVM", and default to that path.
 
-### Example
-
-```json
+### "windows": {
+    "hyperv": {
+        "utilityVMPath": "C:\\path\\to\\utilityvm"
+    }
+}
 "windows": {
     "hyperv": {
         "utilityVMPath": "C:\\path\\to\\utilityvm"
     }
 }
-```
+"windows": {
+    "hyperv": {
+        "utilityVMPath": "C:\\path\\to\\utilityvm"
+    }
+}
